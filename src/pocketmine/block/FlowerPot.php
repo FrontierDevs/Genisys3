@@ -106,7 +106,7 @@ class FlowerPot extends Flowable{
 		$items = [[Item::FLOWER_POT, 0, 1]];
 		$tile = $this->getLevel()->getTile($this);
 		if($tile instanceof TileFlowerPot){
-			if(($item = $tile->getItem())->getId() !== Item::AIR){
+			if ($item = $tile->getItem()->getId() !== Item::AIR){
 				$items[] = [$item->getId(), $item->getDamage(), 1];
 			}
 		}

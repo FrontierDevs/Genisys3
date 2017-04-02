@@ -577,8 +577,10 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 	 * @return permission\PermissionAttachment|null
 	 */
 	public function addAttachment(Plugin $plugin, $name = null, $value = null){
-		if($this->perm == null) return null;
-		return $this->perm->addAttachment($plugin, $name, $value);
+            if ($this->perm == null) {
+            return null;
+        }
+        return $this->perm->addAttachment($plugin, $name, $value);
 	}
 
 
@@ -1627,7 +1629,7 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 				$this->checkNearEntities($tickDiff);
 			}
 
-			$this->speed = ($to->subtract($from))->divide($tickDiff);
+			$this->speed = $to->subtract($from)->divide($tickDiff);
 		}elseif($distanceSquared == 0){
 			$this->speed = new Vector3(0, 0, 0);
 			$this->setMoving(false);
