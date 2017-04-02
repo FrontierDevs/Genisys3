@@ -20,7 +20,7 @@ Discussion
 -------------
 The following chats are bridged:
 
-* Gitter Coming Soon
+* [Gitter Dev chat](https://gitter.im/Genisys-3/Lobby)
 * IRC #genisys3 @ irc.freenode.net ([Webchat](http://webchat.freenode.net/?channels=#genisys3))
 * Discord (Active) https://discord.gg/b3fff
 
