@@ -1,0 +1,126 @@
+#
+#  _______                                _   
+# |__   __|                              | |  
+#    | | ___  ___ ___  ___ _ __ __ _  ___| |_ 
+#    | |/ _ \/ __/ __|/ _ \ '__/ _` |/ __| __|
+#    | |  __/\__ \__ \  __/ | | (_| | (__| |_ 
+#    |_|\___||___/___/\___|_|  \__,_|\___|\__|
+#                                             
+#                                             
+#
+#The advanced configuration for Tesseract
+
+#Version of this file
+config:
+ version: 28
+
+level:
+ #Tama settting paattaa, jos saa on kaytossa peli (sade voi aiheuttaa viiveella vanhemmissa laitteissa)
+ weather: true
+ #Tama asetus maarittaa satunnaisia ajastin Saa kestojen (edellyttaa Saa: totta)
+ #Alueita, jotka sijaitsevat on noudatettava min-max-saanto (min < max)
+ weather-random-duration-min: 6000
+ weather-random-duration-max: 12000
+ #Tama asetus maarittaa ajan salamaniskut peli, oletus 200 10s, 0 = disable
+ lightning-time: 200
+ #Tama asetus paattaa, jos salama iskee on tulipalo, kun ne
+ lightning-fire: false
+ #Tama asetus paattaa, jos palo olisi levinnyt jalkeen burnable materiaaleista (lehdet, puut, jne.)
+ fire-spread: false
+ #jos nether Internet lataaminen tai peliin. Tason nether luo automaattisesti edes jos epatosi
+ #Jos asetus false, sita ole olemassa, mutta ei pitaa kayttaa maailman lapi pelin
+ allow-nether: true
+ #Nether nimi on taso maaritetaan tassa
+ level-name: "nether"
+
+network:
+ #Tama asetus paattaa, jos haluat RakLib kaytosta, RakLib yhdistaa palvelin se ladata asiakkaan
+ #Jos et tieda, mita tama, pida se on false
+ raklib-disable: false
+
+developer:
+  folder-plugin-loader: false
+ 
+player:
+ #Tama asetus paattaa, jos nalka on kaytossa peli
+ #Jos asetus false, nalkaa ei pudota
+ hunger: true
+ #Tama asetus paattaa, jos kokemus on kaytossa
+ #Jos asetus false, sitten exp pulloja ei pudota exp pisteita ja exp taso ei nouse
+ experience: true
+ #Tama asetus paattaa, jos pelaaja varaston pidetaan hanen kuoltuaan
+ keep-inventory: false
+ #Tama asetus paattaa, jos varaston pelaaja poistetaan kun niita muuttamalla niiden gamemode
+ auto-clear-inventory : true
+ #Tama asetus paattaa, jos pelaaja kokemus pidetaan hanen kuoltuaan
+ keep-experience: false
+ #Tama asetus valitsee paloina pelin lataaminen
+ #Tama voi aiheuttaa viivetta, jos asetettu korkeat arvot, jos kaytossa ilmenee kaatumisia, laita se alle 10
+ #Myos poistaa kaytosta asettamalla "-1" arvo
+ chunk-radius: -1
+ 
+ check-movement: true
+ 
+server:
+ #Tama asetus paattaa, jos server.log-tiedosto ei ole tehty ja kirjoittaneet.
+ disable-log: false
+ #Tama asetus paattaa, jos asynkroninen paloina pyynto on kaytossa kun lastaus/uudelleenkaynnistysta palvelin
+ async-chunk-request: true
+ #Tama asetus valitsee miten Muistuta pelaajat kun joku liittyy pelin
+ #0 = viesti, 1 = karki, 2 = Popup
+ player-msg-type: 0
+ login-msg: "§3@player joined the game"
+ logout-msg: "§3@player left the game"
+ #Tama asetus paattaa, onko rajoitettu creative kytketty peli
+ #Jos arvoksi tosi tosi, sitten pelaajat ei voi pudottaa kohteita hotbar, ei voi avata arkkua, ja niin edelleen
+ limited-creative: true
+ #Tama asetus paattaa, jos splash juoma saa heitetaan
+ #Jos asetus false, sitten ne ei nay kun heittaa (tapana splash joko)
+ allow-splash-potion: true
+ #Tama asetus paattaa, jos Advanced komennon valitsin on kaytossa
+ #Jos et tieda, mita se tekee, pitaa vaaria
+ advanced-command-selector: false
+
+enchantment:
+ #Tama asetus paattaa, sallitaanko alasimet voidaan kayttaa peli
+ #Jos alla asetus on false, niin alasimet ei Nayta anvil gui ja tapa kutemaan
+ enable-anvil: true
+ #Tama asetus paattaa, sallitaanko lumous taulukot voidaan kayttaa peli
+ #Jos alla asetus on false, niin lumoava taulukoita ei Nayta enchant taulukon gui ja tapa kutemaan
+ enable-enchanting-table: true
+ #Tama asetus paattaa, jos kirjahyllyt ovat lasketaan yksikoiden (voi aiheuttaa palvelimen viive)
+ #Jos tama asetus on false, palvelin kayttaa satunnainen maara (suositeltavaa ja arvot vaihtelevat 0 ~ 15)
+ count-bookshelf: false
+
+dserver:
+ #Tama asetus paattaa, jos palvelin laskee kaikki monen palvelimia yhdistetaan
+ #Jos et tieda, mita tama tekee, pitaa se asettaa "false"
+ enable: false
+ #Tama asetus paattaa palvelin paivittaa kyselyn
+ query-auto-update: false
+ #Tama asetus paattaa, jos palvelin kyselyn punkit paivittaa
+ query-tick-update: true
+ #Tama asetus nayttaa # max pelaajat MOTD. 0 = oletus
+ motd-max-players: 0
+ #Tama asetus nayttaa max pelaajat # kyselyssa. 0 = oletus
+ query-max-players: 0
+ #Tama asetus paattaa, jos palvelin nayttaa kaikki pelaajat # MOTD
+ motd-all-players: false
+ #Tama asetus tuo nakyviin kaikki pelaajien maara kyselyssa
+ query-all-players: false
+ #Tama asetus nayttaa useita online pelaajat MOTD
+ motd-players: false
+ #Tama asetus tuo nakyviin useita online pelaajat kyselyyn
+ query-players: false
+ #Tama asetus paattaa kyselyn/motd paivityksen aikavali. 20 = 1s
+ time: 40
+ #Tama asetus paattaa # kertaa palvelimen uudelleenyrityksia kun palvelimen ei kaynnisty. 0 = disable, 3 = oletus
+ retry-times: 3
+ #Tama asetus nayttaa palvelimen luettelossa, erottaa ";" , esim 1.example.com:19132;2.example.com:19133
+ server-list: ""
+
+inventory:
+ #Maarittaa asetuksen arvoksi true, jos sinulla on ongelmia alasimet. 
+ #Tama kasittelee varastotapahtumat vanilja tavalla ilman anti-huijaukset tai tarkastus.
+ #Jos nautiskella toimi PE tai Windows 10-ota ota huijareita.
+ allow-cheats: false

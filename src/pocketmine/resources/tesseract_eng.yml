@@ -1,0 +1,136 @@
+#
+#  _______                                _   
+# |__   __|                              | |  
+#    | | ___  ___ ___  ___ _ __ __ _  ___| |_ 
+#    | |/ _ \/ __/ __|/ _ \ '__/ _` |/ __| __|
+#    | |  __/\__ \__ \  __/ | | (_| | (__| |_ 
+#    |_|\___||___/___/\___|_|  \__,_|\___|\__|
+#                                             
+#                                             
+#
+#The advanced configuration for Tesseract
+
+#Version of this file
+config:
+ version: 29
+level:
+ #This settting decides if weather is enabled in game (rain may cause lag to older devices)
+ weather: true
+ #This setting controls a random timer for weather durations (requires weather: true)
+ #The ranges that are set must follow the min-max rule (min < max)
+ weather-random-duration-min: 6000
+ weather-random-duration-max: 12000
+ #This setting controls the interval of lightning strikes in game，default 200 as 10s, 0 = disable
+ lightning-time: 200
+ #This setting will decide if lightning strikes have fire after they strike
+ lightning-fire: false
+ #This setting will decide if fire should spread after it is set on burnable materials (leaves, trees, etc.)
+ fire-spread: false
+ #Choose if the nether is allowed/loaded into the game. The level of nether will generate automatically even if false
+ #If set to false, it will exist, but no one will be able to access the world through the game
+ allow-nether: true
+ #The name of nether's level will be set here
+ level-name: "nether"
+
+network:
+ #This setting decides if you want RakLib to be disabled, RakLib connects a server for it to load for a client
+ #If you do not know what this does, keep it set to false
+ raklib-disable: false
+ 
+player:
+ #This setting decides if hunger will be enabled in game
+ #If set to false, hunger wont drop
+ hunger: true
+ #This setting decides if experience will be enabled
+ #If set to false, then exp bottles wont drop exp dots, and exp level wont go up
+ experience: true
+ #This setting decides if the inventory of a player will be kept after they die
+ keep-inventory: false
+ #This setting decides if the inventory of a player will be cleared upon them changing their gamemode
+ auto-clear-inventory : true
+ #This setting will decide if the experience of a player will be kept after they die
+ keep-experience: false
+ #This setting chooses the size of chunks for the game to load
+ #This may cause lag if set to high values, if you experience crashes, put it below 10
+ #It can also be disabled by setting "-1" for the value
+ chunk-radius: -1
+ 
+anticheat:
+ #This setting decides if the system tracks the movement speed and position of everyone in game, it will see if it is good or bad
+ #Recommended that it stays "true", but set it to "false" if it bugs out players that do not use modifiers
+ check-movement: true
+ #This setting decides if instant breaking by modifiers is allowed or not
+ #Recommended that it stays "false"
+ allow-instabreak: false
+ #This setting decides if flying will be detected/tracked or not
+ #Recommended it is set to "true", but set it to "false" if it bugs out players that do not use modifiers
+ anti-fly: true
+
+developer:
+  #This setting allows the server to load plugins through the source directory over a .phar file
+  #Recommended that it stays "false"
+  folder-plugin-loader: true
+ 
+server:
+ #This setting decides if the server.log file will not be made/written.
+ disable-log: false
+ #This setting decides if the async chunks request will be enabled upon server loading/rebooting
+ async-chunk-request: true
+ #This setting chooses how to remind players when someone joins the game
+ #0 = Message, 1 = Tip, 2 = Popup
+ player-msg-type: 0
+ login-msg: "§3@player joined the game"
+ logout-msg: "§3@player left the game"
+ #This setting decides if limited creative is enabled in game
+ #If set to true true, then players cannot drop items from hotbar, cannot open chests, and so on
+ limited-creative: true
+ #This setting decides if splash potions will be allowed to be thrown
+ #If set to false, then they will not be visible when thrown (wont splash either)
+ allow-splash-potion: true
+ #This setting decides if Advanced Command Selector is enabled
+ #If you do not know what it does, keep it false
+ advanced-command-selector: false
+
+enchantment:
+ #This setting decides if Anvils are allowed to be used in game
+ #If the below setting is false, then anvils will not show the anvil gui and wont spawn
+ enable-anvil: true
+ #This setting decides if Enchantment Tables are allowed to be used in game
+ #If the below setting is false, then enchanting tables will not show the enchant table gui and wont spawn
+ enable-enchanting-table: true
+ #This setting decides if bookshelves are counted as entities (may cause server lag)
+ #If this option is false, the server will use a random count (recommended and the values range from 0~15)
+ count-bookshelf: false
+
+dserver:
+ #This setting decides if the server counts all multi-servers combined
+ #If you do not know what this does, keep it set to "false"
+ enable: false
+ #This setting decides if the server will automatically update the Query
+ query-auto-update: false
+ #This setting decides if the server Query ticks update
+ query-tick-update: true
+ #This setting displays the # of max players on MOTD. 0 = Default
+ motd-max-players: 0
+ #This setting displays the # of max players on Query. 0 = Default
+ query-max-players: 0
+ #This setting decides if the server shows the # of all players on MOTD
+ motd-all-players: false
+ #This setting shows the number of all players on Query
+ query-all-players: false
+ #This setting shows the number of online players on MOTD
+ motd-players: false
+ #This setting shows the number of online players on Query
+ query-players: false
+ #This setting decides the interval for query/motd updating. 20=1s
+ time: 40
+ #This setting decides the # of times the server retries when the server fails to load. 0 = Disable, 3 = Default
+ retry-times: 3
+ #This setting displays the server list，Separate by ';'，e.g. 1.example.com:19132;2.example.com:19133
+ server-list: ""
+
+inventory:
+ #Set this setting to true if you have problems with anvils. 
+ #This will process inventory transactions in a vanilla fashion with no anti-cheats or verification.
+ #If enchants do not work on PE or Windows 10, please enable cheats.
+ allow-cheats: false

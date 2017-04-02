@@ -1,0 +1,116 @@
+#
+#  _______                                _   
+# |__   __|                              | |  
+#    | | ___  ___ ___  ___ _ __ __ _  ___| |_ 
+#    | |/ _ \/ __/ __|/ _ \ '__/ _` |/ __| __|
+#    | |  __/\__ \__ \  __/ | | (_| | (__| |_ 
+#    |_|\___||___/___/\___|_|  \__,_|\___|\__|
+#                                             
+#                                             
+#
+#Tesseract設定用ファイル
+
+#ファイルバージョン
+config:
+ version: 28
+
+level:
+ #天候が有効にするかどうかを設定します。(有効化すると古いデバイスではラグの原因となる可能性があります)
+ weather: false
+ #天候がランダムになる期間の設定です。(この設定を使用するには天候を有効にする必要があります。)
+ #設定する範囲は最小範囲と最大範囲を設定する必要があります。(最小範囲の値は最大範囲の値より小さくする必要があります。)
+ weather-random-duration-min: 6000
+ weather-random-duration-max: 12000
+ #天候の落雷の間隔を設定します。既定値は200(10秒間)です。0を指定した場合は無効に設定します。
+ lightning-time: 200
+ #落雷時に火災を発生させるかどうかを設定します。
+ lightning-fire: false
+ #可燃物(葉、木など)が燃えるかどうかを設定します
+ fire-spread: false
+ #ネザーの要素を有効にするかどうかを設定します。(無効に設定した場合でもネザーのワールドデータが自動的に生成されます。)
+ allow-nether: false
+ #ネザーのレベル名を設定します。
+ level-name: "nether"
+ 
+network:
+ #RakLibを無効にするかどうかを設定します。(RakLibはサーバーに接続したクライアントを読み込みます。)
+ raklib-disable: false
+
+developer:
+  folder-plugin-loader: false
+
+player:
+ #空腹が有効にするかどうかを設定します。
+ hunger: true
+ #経験値が有効にするかどうかを設定します。
+ experience: false
+ #プレイヤーの死亡時にインベントリを保持するかどうかを設定します。
+ keep-inventory: true
+ #ゲームモードの変更時にインベントリを保持するかどうかを設定します。
+ auto-clear-inventory : false
+ #プレイヤーの死亡時に経験値を保持するかどうかを設定します。
+ keep-experience: false
+ #ワールドの読み込むチャンク量の半径を設定します(10以上を指定すると処理過多によりクラッシュする可能性があります。-1を指定すると無効に設定します。)
+ chunk-radius: -1
+ 
+ check-movement: true
+
+server:
+ #サーバーのログをファイルに保存するかを設定します。
+ #保存したログから過去のコンソールの状態を確認することができます。(有効化を推奨します。)
+ disable-log: false
+ #非同期チャンクの要求がサーバーの読み込み(再起動)時に有効にするかどうかを設定します。
+ async-chunk-request: true
+ #プレイヤーの参加(退出)時にサーバー全体に表示するメッセージを設定します。
+ #0 = Message, 1 = Tip, 2 = Popup
+ player-msg-type: 0
+ login-msg: "§3@player joined the game"
+ logout-msg: "§3@player left the game"
+ #クリエイティブゲームモード時に制限が有効にするかどうかを設定します。
+ #有効化すると一部機能(ホットバーからのドロップ、チェストを開けるなど)が使用できなくなります。
+ limited-creative: true
+ #スプラッシュポーションを有効にするかどうかを設定します。
+ allow-splash-potion: true
+ #高度なコマンド設定を有効にするかどうかを設定します。(無効化を推奨します。)
+ advanced-command-selector: false
+
+enchantment:
+ #エンチャント機能を有効にするかどうかを設定します。
+ enable-anvil: true
+ #エンチャントテーブルを使用するかどうかを設定します。
+ enable-enchanting-table: true
+ #本棚をエンティティとしてカウントするかを設定します。(有効化すると古いデバイスではラグの原因となる可能性があります)
+ #無効にするとエンチャント時にサーバーがランダムな数(0から15)を使用します。
+ count-bookshelf: false
+
+dserver:
+ #複数の鯖稼働時にサーバー数をカウントするかを設定します。(無効化を推奨します。)
+ enable: false
+ #サーバーが自動的にクエリを更新するかどうかを設定します。
+ query-auto-update: false
+ #サーバークエリを更新するかどうかを設定します。
+ query-tick-update: true
+ #MOTDの最大プレーヤー数を設定します。(既定値: 0)
+ motd-max-players: 0
+ #クエリの最大プレーヤー数を設定します。(既定値: 0)
+ query-max-players: 0
+ #サーバーのMOTDに全プレイヤー数を表示するかどうかを設定します。
+ motd-all-players: false
+ #クエリの全プレイヤー数を表示するかどうかを決定します。
+ query-all-players: false
+ #MOTDにオンラインプレイヤー数を表示するかどうかを設定します。
+ motd-players: false
+ #This setting shows the number of online players on Query
+ query-players: false
+ #クエリにオンラインプレイヤー数を表示するかどうかを設定します。
+ time: 40
+ #サーバーが読み込みに失敗した時に再試行を行う回数を設定します。(無効: 0 既定値: 3)
+ retry-times: 3
+ #サーバーの一覧を表示するかどうかを決定します。(";"の部分でサーバー指定を区切ります。例: 1.example.com:19132; 2.example.com:19133)
+ server-list: ""
+
+inventory:
+ #インベントリ管理を行うかどうかを設定します。
+ #無効にするとサーバーの在庫トランザクションを使用して処理します。
+ #有効にするとPEまたはWindows10端末での不正を有効にします。
+ allow-cheats: false
