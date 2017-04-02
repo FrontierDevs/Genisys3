@@ -1,4 +1,4 @@
-Genisys 3
+Genisys3
 ===================
 
 __Feature-rich server software for Minecraft: Pocket Edition & Windows 10 Edition Beta__
