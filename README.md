@@ -8,7 +8,7 @@ Introduction
 -------------
 Genisys is one of several derived projects resulting from the inactivity of **[PocketMine/PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** which is now commonly known as **[pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)**. It has many gameplay features implemented which PocketMine-MP does not since Minecraft PE v0.11.
 
-[Genisys](https://github.com/iTXTech/Genisys/) has officially dyed and [FrontierDevs](https://github.com/FrontierDevs) are to revive it under the name Genisys 3. 
+[Genisys](https://github.com/iTXTech/Genisys/) has officially died and [FrontierDevs](https://github.com/FrontierDevs) are to revive it under the name Genisys 3. 
 
 Help & Support
 -------------
