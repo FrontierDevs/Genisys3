@@ -1,3 +1,4 @@
+
 Genisys3
 ===================
 
@@ -21,6 +22,7 @@ The following chats are bridged:
 
 * Gitter Coming Soon
 * IRC #genisys3 @ irc.freenode.net ([Webchat](http://webchat.freenode.net/?channels=#genisys3))
+* Discord (Active) https://discord.gg/b3fff
 
 [Old Forum](https://forum.itxtech.org/) is also available.
 New Forum Will Come Soon.
