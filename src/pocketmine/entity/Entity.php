@@ -114,7 +114,7 @@ abstract class Entity extends Location implements Metadatable{
 	 * 53 (unknown)*/
 	const DATA_BOUNDING_BOX_WIDTH = 54; //float
 	const DATA_BOUNDING_BOX_HEIGHT = 55; //float
-	const DATA_FUSE_LENGTH = 56; //int
+y	const DATA_FUSE_LENGTH = 56; //int
 	/* 56 (vector3f)
 	 * 57 (byte)
 	 * 58 (float)
@@ -124,7 +124,7 @@ abstract class Entity extends Location implements Metadatable{
 	const DATA_FLAG_SNEAKING = 1;
 	const DATA_FLAG_RIDING = 2;
 	const DATA_FLAG_SPRINTING = 3;
-	const DATA_FLAG_ACTION = 4;
+t	const DATA_FLAG_ACTION = 4;
 	const DATA_FLAG_INVISIBLE = 5;
 	const DATA_FLAG_TEMPTED = 6; //???
 	const DATA_FLAG_INLOVE = 7;
@@ -134,7 +134,7 @@ abstract class Entity extends Location implements Metadatable{
 	const DATA_FLAG_BABY = 11;
 	const DATA_FLAG_CONVERTING = 12; //???
 	const DATA_FLAG_CRITICAL = 13;
-	const DATA_FLAG_CAN_SHOW_NAMETAG = 14;
+i	const DATA_FLAG_CAN_SHOW_NAMETAG = 14;
 	const DATA_FLAG_ALWAYS_SHOW_NAMETAG = 15;
 	const DATA_FLAG_IMMOBILE = 16, DATA_FLAG_NO_AI = 16;
 	const DATA_FLAG_SILENT = 17;
@@ -144,11 +144,11 @@ abstract class Entity extends Location implements Metadatable{
 	const DATA_FLAG_ANGRY = 21;
 	const DATA_FLAG_INTERESTED = 22; //for mobs following players with food?
 	const DATA_FLAG_CHARGED = 23;
-	const DATA_FLAG_TAMED = 24;
+t	const DATA_FLAG_TAMED = 24;
 	const DATA_FLAG_LEASHED = 25;
 	const DATA_FLAG_SHEARED = 26; //for sheep
 	const DATA_FLAG_GLIDING = 27, DATA_FLAG_FALL_FLYING = 27;
-	const DATA_FLAG_ELDER = 28; //elder guardian
+n	const DATA_FLAG_ELDER = 28; //elder guardian
 	const DATA_FLAG_MOVING = 29;
 	const DATA_FLAG_BREATHING = 30; //hides bubbles if true
 	const DATA_FLAG_CHESTED = 31; //for mules?
@@ -177,6 +177,7 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(DroppedItem::class);
 		Entity::registerEntity(Egg::class);
 		Entity::registerEntity(Enderman::class);
+		Entity::registerEntity(EnderMite::class);
 		Entity::registerEntity(EnderDragon::class);
 		Entity::registerEntity(EnderPearl::class);
 		Entity::registerEntity(FallingSand::class);
