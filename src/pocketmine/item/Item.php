@@ -70,7 +70,7 @@ class Item implements ItemIds, \JsonSerializable{
 		self::$cachedParser->setData($tag);
 		return self::$cachedParser->write();
 	}
-
+#
 
 	/** @var \SplFixedArray */
 	public static $list = null;
@@ -96,7 +96,7 @@ class Item implements ItemIds, \JsonSerializable{
 			self::$list[self::EYE_OF_ENDER] = EyeOfEnder::class;
 			self::$list[self::DRAGONS_BREATH] = DragonsBreath::class;
 			self::$list[self::SHULKER_SHELL] = ShulkerShell::class;
-			self::$list[self::CARROT_ON_A_STICK] = CarrotOnAStick::class;
+#self::$list[self::CARROT_ON_A_STICK] = CarrotOnAStick::class;
 			self::$list[self::POPPED_CHORUS_FRUIT] = PoppedChorusFruit::class;
 			self::$list[self::WHEAT_SEEDS] = WheatSeeds::class;
 			self::$list[self::PUMPKIN_SEEDS] = PumpkinSeeds::class;
