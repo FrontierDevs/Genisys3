@@ -1,4 +1,5 @@
-<?php namespace pocketmine\command\defaults;
+<?php 
+namespace pocketmine\command\defaults;
 
 use pocketmine\network\protocol\TransferPacket;
 use pocketmine\command\CommandSender;
