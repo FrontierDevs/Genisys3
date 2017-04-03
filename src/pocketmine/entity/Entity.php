@@ -143,7 +143,6 @@ abstract class Entity extends Location implements Metadatable{
 	const DATA_FLAG_SITTING = 20;
 	const DATA_FLAG_ANGRY = 21;
 	const DATA_FLAG_INTERESTED = 22; //for mobs following players with food?
-
 	const DATA_FLAG_CHARGED = 23;
 	const DATA_FLAG_TAMED = 24;
 	const DATA_FLAG_LEASHED = 25;
@@ -163,7 +162,6 @@ abstract class Entity extends Location implements Metadatable{
 
 	public static $entityCount = 1;
 	/** @var Entity[] */
-
 	private static $knownEntities = [];
 	private static $shortNames = [];
 
@@ -179,21 +177,15 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(DroppedItem::class);
 		Entity::registerEntity(Egg::class);
 		Entity::registerEntity(Enderman::class);
-		Entity::registerEntity(EnderMite::class);
 		Entity::registerEntity(EnderDragon::class);
-		Entity::registerEntity(ElderGuardian::class);
-		Entity::registerEntity(EnderCrystal::class);
 		Entity::registerEntity(EnderPearl::class);
 		Entity::registerEntity(FallingSand::class);
 		Entity::registerEntity(FishingHook::class);
 		Entity::registerEntity(Ghast::class);
-		Entity::registerEntity(GhastFireBall::class);
-		Entity::registerEntity(Guardian::class);
 		Entity::registerEntity(Horse::class);
 		Entity::registerEntity(Husk::class);
 		Entity::registerEntity(IronGolem::class);
 		Entity::registerEntity(LavaSlime::class); //Magma Cube
-		Entity::registerEntity(LeashKnot::class);
 		Entity::registerEntity(Lightning::class);
 		Entity::registerEntity(Minecart::class);
 		Entity::registerEntity(MinecartChest::class);
@@ -204,12 +196,9 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(Painting::class);
 		Entity::registerEntity(Pig::class);
 		Entity::registerEntity(PigZombie::class);
-		Entity::registerEntity(PolarBear::class);
 		Entity::registerEntity(PrimedTNT::class);
 		Entity::registerEntity(Rabbit::class);
 		Entity::registerEntity(Sheep::class);
-		Entity::registerEntity(Shulker::class);
-		Entity::registerEntity(ShulkerBullet::class);	
 		Entity::registerEntity(Silverfish::class);
 		Entity::registerEntity(Skeleton::class);
 		Entity::registerEntity(Slime::class);
