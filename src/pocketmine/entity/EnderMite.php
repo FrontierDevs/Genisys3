@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 /*
   *     _____            _                _____ 
@@ -18,24 +19,22 @@
   * @author FrontierDevs
   * @see Genisys3.org
   */
-  
-  namespace pocketmine\entity;
-  
-  use pocketmine\network\protocol\AddEntityPacket;
-  use pocketmine\player;
 
-class EnderMite extends Monster{
- const NETWORK_ID = 55;
- 
- public $dropExp = [5, 5];
- 
- public funtion getName() : string{
-  return "EnderMite";
- }
- 
+namespace pocketmine\entity;
 
+use pocketmine\network\protocol\AddEntityPacket;
+use pocketmine\Player;
+
+class Endermite extends Monster{
+	const NETWORK_ID = 55;
+
+	public $dropExp = [5, 5];
+	
+	public function getName() : string{
+		return "Endermite";
+	}
+	
 	public function spawnTo(Player $player){
-
 		$pk = new AddEntityPacket();
 		$pk->eid = $this->getId();
 		$pk->type = Silverfish::NETWORK_ID;
@@ -51,5 +50,5 @@ class EnderMite extends Monster{
 		$player->dataPacket($pk);
 
 		parent::spawnTo($player);
- }
+	}
 }
