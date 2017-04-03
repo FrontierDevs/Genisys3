@@ -143,6 +143,7 @@ abstract class Entity extends Location implements Metadatable{
 	const DATA_FLAG_SITTING = 20;
 	const DATA_FLAG_ANGRY = 21;
 	const DATA_FLAG_INTERESTED = 22; //for mobs following players with food?
+
 	const DATA_FLAG_CHARGED = 23;
 	const DATA_FLAG_TAMED = 24;
 	const DATA_FLAG_LEASHED = 25;
@@ -180,6 +181,7 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(EnderMite::class);
 		Entity::registerEntity(EnderDragon::class);
 		Entity::registerEntity(ElderGuardian::class);
+		Entity::registerEntity(EnderCrystal::class);
 		Entity::registerEntity(EnderPearl::class);
 		Entity::registerEntity(FallingSand::class);
 		Entity::registerEntity(FishingHook::class);
@@ -190,6 +192,7 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(Husk::class);
 		Entity::registerEntity(IronGolem::class);
 		Entity::registerEntity(LavaSlime::class); //Magma Cube
+		Entity::registerEntity(LeashKnot::class);
 		Entity::registerEntity(Lightning::class);
 		Entity::registerEntity(Minecart::class);
 		Entity::registerEntity(MinecartChest::class);
