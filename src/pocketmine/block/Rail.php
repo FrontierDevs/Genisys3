@@ -1,4 +1,3 @@
-
 <?php
 
 /**
@@ -38,8 +37,5 @@ class Rail extends Flowable{
 
 	public function getName() : string{
 		return "Rail";
-	}
-	public function getHardness() {
-		return 0.7;
 	}
 }
