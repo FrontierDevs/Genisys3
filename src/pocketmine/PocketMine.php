@@ -25,8 +25,7 @@ namespace {
 		foreach(func_get_args() as $var){
 			switch(true){
 				case is_array($var):
-					echo str_repeat("  ", $cnt) . "array(" . count($var) . ") {" . PHP_EOL;
-					foreach($var as $key => $value){
+					echo str_repeat("  ", $cnt) . "array(" . count($var) . ") {" . PHP_EOL;					foreach($var as $key => $value){
 						echo str_repeat("  ", $cnt + 1) . "[" . (is_int($key) ? $key : '"' . $key . '"') . "]=>" . PHP_EOL;
 						++$cnt;
 						safe_var_dump($value);
@@ -36,8 +35,7 @@ namespace {
 					break;
 				case is_int($var):
 					echo str_repeat("  ", $cnt) . "int(" . $var . ")" . PHP_EOL;
-					break;
-				case is_float($var):
+					break;				case is_float($var):
 					echo str_repeat("  ", $cnt) . "float(" . $var . ")" . PHP_EOL;
 					break;
 				case is_bool($var):
@@ -47,8 +45,7 @@ namespace {
 					echo str_repeat("  ", $cnt) . "string(" . strlen($var) . ") \"$var\"" . PHP_EOL;
 					break;
 				case is_resource($var):
-					echo str_repeat("  ", $cnt) . "resource() of type (" . get_resource_type($var) . ")" . PHP_EOL;
-					break;
+					echo str_repeat("  ", $cnt) . "resource() of type (" . get_resource_type($var) . ")" . PHP_EOL;					break;
 				case is_object($var):
 					echo str_repeat("  ", $cnt) . "object(" . get_class($var) . ")" . PHP_EOL;
 					break;
@@ -72,9 +69,9 @@ namespace pocketmine {
 	use pocketmine\utils\Utils;
 	use pocketmine\wizard\Installer;
 
-	const VERSION = "1.0.0"; //will be set by CI to a git hash // manually set it to 1.0.0 /eD
+	const VERSION = "1.1.0"; //will be set by CI to a git hash // manually set it to 1.0.0 /eD
 	const API_VERSION = "3.0.0-ALPHA4";
-	const CODENAME = "Enopoio";
+	const CODENAME = "Οντότητα";
 	const GENISYS_API_VERSION = '2.0.0';
 
 	/*
