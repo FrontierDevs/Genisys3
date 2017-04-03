@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
  *
@@ -38,10 +38,6 @@ class EnderCrystal extends Vehicle{
 	public function __construct(Level $level, CompoundTag $nbt){
 		parent::__construct($level, $nbt);
 	}
-		public function getName() : string{
-		return "EndCrystal";
-	}
-
 
 	public function spawnTo(Player $player){
 		$pk = new AddEntityPacket();
@@ -57,7 +53,7 @@ class EnderCrystal extends Vehicle{
 		$pk->pitch = 0;
 		$pk->metadata = $this->dataProperties;
 		$player->dataPacket($pk);
-
+		
 		parent::spawnTo($player);
 	}
 }
