@@ -19,7 +19,7 @@
   * @see Genisys3.org
   */
   
-  namespace pocketmine/entity;
+  namespace pocketmine\entity;
   
   use pocketmine\network\protocol\AddEntityPacket;
   use pocketmine\player;
