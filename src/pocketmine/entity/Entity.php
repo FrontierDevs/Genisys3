@@ -163,6 +163,7 @@ abstract class Entity extends Location implements Metadatable{
 
 	public static $entityCount = 1;
 	/** @var Entity[] */
+
 	private static $knownEntities = [];
 	private static $shortNames = [];
 
@@ -207,6 +208,8 @@ abstract class Entity extends Location implements Metadatable{
 		Entity::registerEntity(PrimedTNT::class);
 		Entity::registerEntity(Rabbit::class);
 		Entity::registerEntity(Sheep::class);
+		Entity::registerEntity(Shulker::class);
+		Entity::registerEntity(ShulkerBullet::class);	
 		Entity::registerEntity(Silverfish::class);
 		Entity::registerEntity(Skeleton::class);
 		Entity::registerEntity(Slime::class);
