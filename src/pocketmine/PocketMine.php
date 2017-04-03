@@ -76,6 +76,8 @@ namespace pocketmine {
 	const API_VERSION = "3.0.0-ALPHA4";
 	const CODENAME = "Enopoio";
 	const GENISYS_API_VERSION = '2.0.0';
+        const GROUP_NAME = "FrontierDevs";
+        const CLIENT_VERSION = "1.1.0";
 
 	/*
 	 * Startup code. Do not look at it, it may harm you.

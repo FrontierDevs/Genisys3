@@ -385,6 +385,20 @@ class Server{
 	public function getiTXApiVersion(){
 		return \pocketmine\GENISYS_API_VERSION;
 	}
+        
+        /**
+         * @return string
+         */
+        public function getServerDevName() {
+            return \pocketmine\GROUP_NAME;
+        }
+        
+        /**
+         * @return string
+         */
+        public function getMCPEClientVersion() {
+            return \pocketmine\CLIENT_VERSION;
+        }
 
 	/**
 	 * @return string
