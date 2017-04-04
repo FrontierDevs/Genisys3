@@ -1,5 +1,5 @@
 @echo off
-TITLE Genisys server software for Minecraft: Pocket Edition
+TITLE Genisys server software for Minecraft: Pocket Edition, modified by FrontierDevs
 cd /d %~dp0
 
 if exist bin\php\php.exe (
