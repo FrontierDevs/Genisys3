@@ -22,7 +22,7 @@ The following chats are bridged:
 
 * [Gitter Dev chat](https://gitter.im/Genisys-3/Lobby)
 * IRC #genisys3 @ irc.freenode.net ([Webchat](http://webchat.freenode.net/?channels=#genisys3))
-* [Discord](https://discord.gg/b3fff)
+* [Discord](https://discord.gg/jf9TjSJ)
 
 [Old Forum](https://forum.itxtech.org/) is also available.
 New Forum Will Come Soon.
