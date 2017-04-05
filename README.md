@@ -1,5 +1,5 @@
 
-Genisys3
+Genisys3 MCPE 1.1.0 Branch
 ===================
 
 __Feature-rich server software for Minecraft: Pocket Edition & Windows 10 Edition Beta__
