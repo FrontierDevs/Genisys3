@@ -22,8 +22,10 @@
 namespace pocketmine\item;
 
 use pocketmine\block\Block;
+use pocketmine\entity\Colorable;
+use pocketmine\utils\Color;
 
-class Bed extends Item{
+class Bed extends Item implements Colorable {
 
 	public function __construct($meta = 0, $count = 1){
 		$this->block = Block::get(Item::BED_BLOCK);
@@ -33,4 +35,21 @@ class Bed extends Item{
 	public function getMaxStackSize() : int{
 		return 1;
 	}
+        
+        public function setCustomColor(Color $color) {
+            
+            switch ($color) {
+                
+                case "white":
+                    
+                    $tag = new \pocketmine\nbt\tag\CompoundTag('', []);
+                    $tag->customcolor = new \pocketmine\nbt\tag\IntTag("customcolor", $color->getColorCode());
+                    $this->setCompoundTag($tag);
+                    
+                    break;
+                
+            }
+            
+        }
+        
 }
