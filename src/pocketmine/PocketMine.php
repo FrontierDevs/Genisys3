@@ -74,7 +74,7 @@ namespace pocketmine {
 	const CODENAME = "Οντότητα";
 	const GENISYS_API_VERSION = '2.0.0';
         const GROUP_NAME = "FrontierDevs";
-        const CLIENT_VERSION = "1.1.0";
+        const CLIENT_VERSION = "1.0.5";
 
 	/*
 	 * Startup code. Do not look at it, it may harm you.
