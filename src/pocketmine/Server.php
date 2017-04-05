@@ -1641,17 +1641,8 @@ class Server{
 			$advVer = $this->getAdvancedProperty("config.version", 0);
 
 			$this->loadAdvancedConfig();
-                        
-                        $file = $this->dataPath . "server.properties";
-                            
-                        if ($file['version'] >= 3.0) {
-                            $this->logger->warning("You are using the latest version of Genisys!");
-                        } else {
-                            $this->logger->warning("Make sure you're using the latest version of Genisys!");
-                        }
                             
 			$this->properties = new Config($this->dataPath . "server.properties", Config::PROPERTIES, [
-                                "version" => 3.0,
 				"motd" => "Minecraft: PE Server",
 				"server-port" => 19132,
 				"white-list" => false,
@@ -1676,16 +1667,7 @@ class Server{
 				"auto-save" => true,
 				"online-mode" => false,
 				"view-distance" => 8,
-                                "enable-features" => false 
 			]);
-                        
-                        $file = $this->getPath() . "server.properties";
-                        
-                        if ($file['enable-features'] === true) {
-                            $this->logger->warning("You have enabled the new features of Genisys 3.0");
-                        } else {
-                            $this->logger->warning("You have the new features disabled!");
-                        }
 
 			$onlineMode = $this->getConfigBoolean("online-mode", false);
 			if(!extension_loaded("openssl")){
