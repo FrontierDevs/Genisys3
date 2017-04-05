@@ -32,7 +32,7 @@ interface Info{
 	 */
 	
 	const CURRENT_PROTOCOL = 105;
-	const ACCEPTED_PROTOCOLS = [100]; // Backwards compatibility
+	const ACCEPTED_PROTOCOLS = [102]; // Backwards compatibility
 	const MINECRAFT_VERSION = "v1.0.5.0";
 	const MINECRAFT_VERSION_NETWORK = "1.0.5.0";
 
