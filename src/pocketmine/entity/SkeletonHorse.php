@@ -50,10 +50,6 @@ class SkeletonHorse extends Living {
 
 		parent::spawnTo($player);
                 
-		foreach($this->level->getPlayers() as $player){
-			$player->dataPacket($pk);
-		}
-                
 	}
 
 }
