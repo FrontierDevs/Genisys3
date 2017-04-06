@@ -63,7 +63,25 @@ class Bed extends Transparent{
 	}
 
 	public function getName() : string{
-		return "Bed Block";
+		static $names = [
+			0 => "White Bed",
+			1 => "Orange Bed",
+			2 => "Magenta Bed",
+			3 => "Light Blue Bed",
+			4 => "Yellow Bed",
+			5 => "Lime Bed",
+			6 => "Pink Bed",
+			7 => "Gray Bed",
+			8 => "Light Gray Bed",
+			9 => "Cyan Bed",
+			10 => "Purple Bed",
+			11 => "Blue Bed",
+			12 => "Brown Bed",
+			13 => "Green Bed",
+			14 => "Red Bed",
+			15 => "Black Bed",
+		];
+		return $names[$this->meta & 0x0f];
 	}
 
 	protected function recalculateBoundingBox() {
