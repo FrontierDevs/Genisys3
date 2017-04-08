@@ -39,6 +39,10 @@ Tools
 * [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Plugin and server development tools plugin
 * [Pocket Server](https://github.com/fengberd/MinecraftPEServer) - Run PocketMine-MP/Nukkit on Android devices
 
+Donations
+-------------
+[Donate Here](https://paypal.me/eDroid)
+
 Licence
 -------------
 	This program is free software: you can redistribute it and/or modify
