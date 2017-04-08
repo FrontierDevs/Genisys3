@@ -1,14 +1,14 @@
 Genisys3
 ===================
 
-__Feature-rich server software for Minecraft: Pocket Edition & Windows 10 Edition Beta__
+__Genisys, but better than anytime before__
 
 
 Introduction
 -------------
-Genisys 3 is one of several derived projects resulting from the inactivity of **[PocketMine/PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** & **[ITX Tech](https://github.com/iTXTech/Genisys)** which is now commonly known as **[pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)**. It has many gameplay features implemented which PocketMine-MP does not since Minecraft PE v0.11.
+Genisys3 is one of several derived projects resulting from the inactivity of **[PocketMine/PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** which is now commonly known as **[pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** and **[iTXTech/Genisys](https://github.com/iTXTech/Genisys)** . It has many gameplay features implemented which PocketMine-MP does not since Minecraft PE v0.11.
 
-[Genisys](https://github.com/iTXTech/Genisys/) has officially died and [FrontierDevs](https://github.com/FrontierDevs) are reviving it under the name Genisys3 
+[Genisys](https://github.com/iTXTech/Genisys/) has officially died and [FrontierDevs](https://github.com/FrontierDevs) are reviving it under the name [Genisys3](http://github.genisys3.org)
 
 Help & Support
 -------------
