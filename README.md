@@ -41,7 +41,7 @@ Tools
 
 Donations
 -------------
-[Donate Here](https://paypal.me/eDroid)
+We plan on continuing much further development on Genisys3 but we need to be able to host a server for testing and tools for the user. To donate click [here](https://paypal.me/eDroid)
 
 Licence
 -------------
