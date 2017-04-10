@@ -285,6 +285,8 @@ class Block extends Position implements BlockIds, Metadatable{
 			self::$list[self::ITEM_FRAME_BLOCK] = ItemFrame::class;
 			self::$list[self::DISPENSER] = Dispenser::class;
 			self::$list[self::DROPPER] = Dropper::class;
+                   self::$list[self::SHULKER_BOX] = ShulkerBox::class;
+			self::$list[self::GLAZED_TERRACOTTA] = GlazedTerracotta::class;
 			self::$list[self::POWERED_REPEATER_BLOCK] = PoweredRepeater::class;
 			self::$list[self::UNPOWERED_REPEATER_BLOCK] = UnpoweredRepeater::class;
 			self::$list[self::CAULDRON_BLOCK] = Cauldron::class;
