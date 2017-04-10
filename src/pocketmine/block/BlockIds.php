@@ -225,7 +225,6 @@ interface BlockIds{
 
 	const END_STONE_BRICKS = 206;
 	const END_ROD = 208;
-      const SHULKER_BOX = 219;
 	const GLAZED_TERRACOTTA = 235;
 
 	const CHORUS_PLANT = 240;
