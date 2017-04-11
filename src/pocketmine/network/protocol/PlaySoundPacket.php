@@ -2,52 +2,53 @@
 
 /*
  *
- *  ____            _        _   __  __ _                  __  __ ____  
- * |  _ \ ___   ___| | _____| |_|  \/  (_)_ __   ___      |  \/  |  _ \ 
- * | |_) / _ \ / __| |/ / _ \ __| |\/| | | '_ \ / _ \_____| |\/| | |_) |
- * |  __/ (_) | (__|   <  __/ |_| |  | | | | | |  __/_____| |  | |  __/ 
- * |_|   \___/ \___|_|\_\___|\__|_|  |_|_|_| |_|\___|     |_|  |_|_| 
+ *    _______                                _
+ *   |__   __|                              | |
+ *      | | ___  ___ ___  ___ _ __ __ _  ___| |_
+ *      | |/ _ \/ __/ __|/ _ \  __/ _` |/ __| __|
+ *      | |  __/\__ \__ \  __/ | | (_| | (__| |_
+ *      |_|\___||___/___/\___|_|  \__,_|\___|\__|
+ *
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * @author PocketMine Team
- * @link http://www.pocketmine.net/
+ * @author Tesseract Team
+ * @link http://www.github.com/TesseractTeam/Tesseract
  * 
  *
-*/
+ */
 
 namespace pocketmine\network\protocol;
 
 #include <rules/DataPacket.h>
 
-
 class PlaySoundPacket extends DataPacket{
 
 	const NETWORK_ID = Info::PLAY_SOUND_PACKET;
 
-	public $unknown;
+	public $sound;
 	public $x;
 	public $y;
 	public $z;
-	public $unknown1;
-	public $unknown2;
+	public $volume;
+	public $float;
 
 	public function decode(){
-		$this->unknown = $this->getString();
-		$this->getBlockCoords($this->x, $this->y, $this->z); //Not sure if it's BlockCoords
-		$this->unknown1 = $this->getFloat();
-		$this->unknown2 = $this->getFloat();
+		$this->sound = $this->getString();
+		$this->getBlockPos($this->x, $this->y, $this->z);
+		$this->volume = $this->getFloat();
+		$this->float = $this->getFloat();
 	}
 
 	public function encode(){
 		$this->reset();
-		$this->putString($this->unknown);
-		$this->putBlockCoords($this->x, $this->y, $this->z); //Not sure if it's BlockCoords
-		$this->putFloat($this->unknown1);
-		$this->putFloat($this->unknown2);
+		$this->putString($this->sound);
+		$this->putBlockPos($this->x, $this->y, $this->z);
+		$this->putFloat($this->volume);
+		$this->putFloat($this->float);
 	}
 
 	/**
