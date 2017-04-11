@@ -1460,13 +1460,11 @@ class Server{
 	public function about(){
 		$string = '
 
-	§cGenisys3§f is a custom version of §ePocketMine-MP§f
+	§cGenisys3§f is a custom version of §ePocketMine-MP§f, modified by §6FrontierDevs§f
 	Version: §6' . $this->getPocketMineVersion() . '§f
 	Target client version: §6' . ProtocolInfo::MINECRAFT_VERSION . '§f
 	Source code: §ehttps://github.com/FrontierDevs/Genisys3/§f
-        Modified By: ' . $this->getServerDevName() . ' <=
-                        
-        ';
+	';
 	
 		$this->getLogger()->info($string);
 	}
@@ -1641,17 +1639,8 @@ class Server{
 			$advVer = $this->getAdvancedProperty("config.version", 0);
 
 			$this->loadAdvancedConfig();
-                        
-                        $file = $this->dataPath . "server.properties";
-                            
-                        if ($file['version'] >= 3.0) {
-                            $this->logger->warning("You are using the latest version of Genisys!");
-                        } else {
-                            $this->logger->warning("Make sure you're using the latest version of Genisys!");
-                        }
-                            
+
 			$this->properties = new Config($this->dataPath . "server.properties", Config::PROPERTIES, [
-                                "version" => 3.0,
 				"motd" => "Minecraft: PE Server",
 				"server-port" => 19132,
 				"white-list" => false,
@@ -1675,17 +1664,8 @@ class Server{
 				"rcon.password" => substr(base64_encode(random_bytes(20)), 3, 10),
 				"auto-save" => true,
 				"online-mode" => false,
-				"view-distance" => 8,
-                                "enable-features" => false 
+				"view-distance" => 8
 			]);
-                        
-                        $file = $this->getPath() . "server.properties";
-                        
-                        if ($file['enable-features'] === true) {
-                            $this->logger->warning("You have enabled the new features of Genisys 3.0");
-                        } else {
-                            $this->logger->warning("You have the new features disabled!");
-                        }
 
 			$onlineMode = $this->getConfigBoolean("online-mode", false);
 			if(!extension_loaded("openssl")){
