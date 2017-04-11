@@ -63,6 +63,6 @@ class BanIpByNameCommand extends VanillaCommand{
 
 		Command::broadcastCommandMessage($sender, new TranslationContainer("%commands.banipbyname.success", [$player !== \null ? $player->getName() : $name]));
 
-		return \true;
+		return true;
 	}
 }

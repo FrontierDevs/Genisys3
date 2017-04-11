@@ -1,4 +1,26 @@
 <?php 
+
+/*
+ *
+ *    _______                                _
+ *   |__   __|                              | |
+ *      | | ___  ___ ___  ___ _ __ __ _  ___| |_
+ *      | |/ _ \/ __/ __|/ _ \  __/ _` |/ __| __|
+ *      | |  __/\__ \__ \  __/ | | (_| | (__| |_
+ *      |_|\___||___/___/\___|_|  \__,_|\___|\__|
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * @author Tesseract Team
+ * @link http://www.github.com/TesseractTeam/Tesseract
+ * 
+ *
+ */
+
 namespace pocketmine\command\defaults;
 
 use pocketmine\network\protocol\TransferPacket;
@@ -34,10 +56,7 @@ class TransferCommand extends VanillaCommand{
 			$address = strtolower($args[0]);
 			$port = (isset($args[1]) && is_numeric($args[1]) ? $args[1] : 19132);
 
-			$pk = new TransferPacket();
-			$pk->address = $address;
-			$pk->port = $port;
-			$sender->dataPacket($pk);
+			$sender->transfer($address, $port);
 
 			return false;
 		}
@@ -54,13 +73,9 @@ class TransferCommand extends VanillaCommand{
 
 		$address = strtolower($args[1]);
 		$port = (isset($args[2]) && is_numeric($args[2]) ? $args[2] : 19132);
-
+		
 		$sender->sendMessage("Sending ".$player->getName()." to ".$address.":".$port);
 
-		$pk = new TransferPacket();
-		$pk->address = $address;
-		$pk->port = $port;
-		$player->dataPacket($pk);
+		$player->transfer($address, $port);
 	}
-
 }
