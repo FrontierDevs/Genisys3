@@ -165,7 +165,7 @@ abstract class Entity extends Location implements Metadatable{
 	private static $shortNames = [];
 
 	public static function init(){
-			Entity::registerEntity(Arrow::class);
+                Entity::registerEntity(Arrow::class);
 		Entity::registerEntity(Bat::class);
 		Entity::registerEntity(Blaze::class);
 		Entity::registerEntity(Boat::class);
