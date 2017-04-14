@@ -38,6 +38,7 @@ class ServerKiller extends Thread{
 		});
 		if(time() - $start >= $this->time){
 			echo "\nTook too long to stop, server was killed forcefully!\n";
+                        echo "\nThank you for using Genisys 3 by FrontierDevs!\n";
 			@\pocketmine\kill(getmypid());
 		}
 	}
