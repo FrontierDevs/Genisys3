@@ -16,7 +16,7 @@ class EnderPearl extends Projectile{
 	public $length = 0.25;
 	public $height = 0.25;
 
-	protected $gravity = 0.03;
+	protected $gravity = 0.01;
 	protected $drag = 0.01;
 	protected $player;
 
