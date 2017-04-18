@@ -32,7 +32,7 @@ class TellCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"%pocketmine.command.tell.description",
-			"%pocketmine.command.tell.usage",
+			"%commands.message.usage",
 			["w", "whisper", "msg", "m"]
 		);
 		$this->setPermission("pocketmine.command.tell");

@@ -34,7 +34,7 @@ class XpCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"%pocketmine.command.xp.description",
-			"%pocketmine.command.xp.usage"
+			"%commands.xp.usage"
 		);
 		$this->setPermission("pocketmine.command.xp");
 	}
@@ -89,6 +89,5 @@ class XpCommand extends VanillaCommand{
 			$sender->sendMessage(new TranslationContainer(TextFormat::RED . "%commands.generic.player.notFound"));
 			return false;
 		}
-		return false;
 	}
 }

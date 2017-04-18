@@ -33,7 +33,7 @@ class HelpCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"%pocketmine.command.help.description",
-			"%pocketmine.command.help.usage",
+			"%commands.help.usage",
 			["?"]
 		);
 		$this->setPermission("pocketmine.command.help");

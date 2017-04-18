@@ -23,13 +23,11 @@ namespace pocketmine\command\defaults;
 
 use pocketmine\command\CommandSender;
 use pocketmine\event\TranslationContainer;
+use pocketmine\item\Item;
+use pocketmine\item\ItemBlock;
+use pocketmine\math\Vector3;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
-use pocketmine\math\Vector3;
-
-use pocketmine\item\ItemBlock;
-use pocketmine\item\Item;
-
 
 class SetBlockCommand extends VanillaCommand{
 
@@ -37,7 +35,7 @@ class SetBlockCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"%pocketmine.command.setblock.description",
-			"%pocketmine.command.setblock.usage"
+			"%commands.setblock.usage"
 		);
 		$this->setPermission("pocketmine.command.setblock");
 	}
@@ -103,7 +101,7 @@ class SetBlockCommand extends VanillaCommand{
 				}
 			}
 		}else{
-			$sender->sendMessage(TextFormat::RED . new TranslationContainer("command.setblock.invalidBlock", []));
+			$sender->sendMessage(TextFormat::RED . new TranslationContainer("commands.setblock.invalidBlock", []));
 			return false;
 		}
 		return true;

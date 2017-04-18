@@ -25,14 +25,13 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\TranslationContainer;
 
-
 class BanCidCommand extends VanillaCommand{
 
 	public function __construct($name){
 		parent::__construct(
 			$name,
 			"%pocketmine.command.bancid.description",
-			"%pocketmine.command.bancid.usage"
+			"%commands.bancid.usage"
 		);
 		$this->setPermission("pocketmine.command.bancid");
 	}

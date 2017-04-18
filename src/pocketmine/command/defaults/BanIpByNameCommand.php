@@ -26,14 +26,13 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\TranslationContainer;
 use pocketmine\Player;
 
-
 class BanIpByNameCommand extends VanillaCommand{
 
 	public function __construct($name){
 		parent::__construct(
 			$name,
 			"%pocketmine.command.banipbyname.description",
-			"%pocketmine.command.banipbyname.usage"
+			"%commands.banipbyname.usage"
 		);
 		$this->setPermission("pocketmine.command.banipbyname");
 	}
@@ -63,6 +62,6 @@ class BanIpByNameCommand extends VanillaCommand{
 
 		Command::broadcastCommandMessage($sender, new TranslationContainer("%commands.banipbyname.success", [$player !== \null ? $player->getName() : $name]));
 
-		return \true;
+		return true;
 	}
 }

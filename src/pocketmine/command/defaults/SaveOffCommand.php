@@ -32,7 +32,7 @@ class SaveOffCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"%pocketmine.command.saveoff.description",
-			"%pocketmine.command.saveoff.usage"
+			"%commands.save-off.usage"
 		);
 		$this->setPermission("pocketmine.command.save.disable");
 	}
