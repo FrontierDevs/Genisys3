@@ -23,24 +23,22 @@ namespace pocketmine\level;
 
 use pocketmine\block\Block;
 use pocketmine\entity\Entity;
+use pocketmine\event\block\BlockUpdateEvent;
 use pocketmine\event\entity\EntityDamageByBlockEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityExplodeEvent;
-use pocketmine\event\block\BlockUpdateEvent;
 use pocketmine\item\Item;
 use pocketmine\level\particle\HugeExplodeSeedParticle;
-use pocketmine\level\sound\ExplodeSound;
 use pocketmine\math\AxisAlignedBB;
 use pocketmine\math\Math;
 use pocketmine\math\Vector3;
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\DoubleTag;
-use pocketmine\nbt\tag\ListTag;
 use pocketmine\nbt\tag\FloatTag;
+use pocketmine\nbt\tag\ListTag;
 use pocketmine\network\protocol\ExplodePacket;
-
 use pocketmine\utils\Random;
 
 class Explosion{
@@ -229,7 +227,6 @@ class Explosion{
 		$this->level->addChunkPacket($source->x >> 4, $source->z >> 4, $pk);
 
 		$this->level->addParticle(new HugeExplodeSeedParticle($source));
-		$this->level->addSound(new ExplodeSound(new Vector3($source->x, $source->y, $source->z)));
 
 		return true;
 	}

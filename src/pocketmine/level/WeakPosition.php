@@ -25,7 +25,7 @@ use pocketmine\math\Vector3;
 use pocketmine\Server;
 
 class WeakPosition extends Position{
-	
+
 	protected $levelId = -1;
 
 	/**
@@ -63,7 +63,7 @@ class WeakPosition extends Position{
 		if($level !== null and $level->isClosed()){
 			throw new \InvalidArgumentException("Specified level has been unloaded and cannot be used");
 		}
- 
+
 		$this->levelId = ($level !== null ? $level->getId() : -1);
 		return $this;
 	}
