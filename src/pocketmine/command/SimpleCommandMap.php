@@ -45,7 +45,6 @@ use pocketmine\command\defaults\KickCommand;
 use pocketmine\command\defaults\KillCommand;
 use pocketmine\command\defaults\ListCommand;
 use pocketmine\command\defaults\LvdatCommand;
-use pocketmine\command\defaults\MakePharCommand;
 use pocketmine\command\defaults\MeCommand;
 use pocketmine\command\defaults\OpCommand;
 use pocketmine\command\defaults\PardonCidCommand;
@@ -69,7 +68,6 @@ use pocketmine\command\defaults\TeleportCommand;
 use pocketmine\command\defaults\TellCommand;
 use pocketmine\command\defaults\TimeCommand;
 use pocketmine\command\defaults\TimingsCommand;
-use pocketmine\command\defaults\TransferServerCommand;
 use pocketmine\command\defaults\VanillaCommand;
 use pocketmine\command\defaults\VersionCommand;
 use pocketmine\command\defaults\WeatherCommand;
@@ -80,6 +78,11 @@ use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\MainLogger;
 use pocketmine\utils\TextFormat;
+
+use pocketmine\command\defaults\MakeServerCommand;
+use pocketmine\command\defaults\ExtractPluginCommand;
+use pocketmine\command\defaults\ExtractPharCommand;
+use pocketmine\command\defaults\MakePluginCommand;
 
 class SimpleCommandMap implements CommandMap{
 
@@ -106,9 +109,15 @@ class SimpleCommandMap implements CommandMap{
 	private function setDefaultCommands(){
 		$this->register("pocketmine", new WeatherCommand("weather"));
 
-		$this->register("pocketmine", new BanIpByNameCommand("banipbyname"));
-		$this->register("pocketmine", new BanCidByNameCommand("bancidbyname"));
 		$this->register("pocketmine", new BanCidCommand("bancid"));
+		$this->register("pocketmine", new PardonCidCommand("pardoncid"));
+		$this->register("pocketmine", new BanCidByNameCommand("bancidbyname"));
+		$this->register("pocketmine", new BanIpByNameCommand("banipbyname"));
+
+		$this->register("pocketmine", new ExtractPharCommand("extractphar"));
+		$this->register("pocketmine", new ExtractPluginCommand("ep"));
+		$this->register("pocketmine", new MakePluginCommand("mp"));
+		$this->register("pocketmine", new MakeServerCommand("ms"));
 
 		$this->register("pocketmine", new LvdatCommand("lvdat"));
 		$this->register("pocketmine", new BiomeCommand("biome"));
@@ -152,7 +161,6 @@ class SimpleCommandMap implements CommandMap{
 		$this->register("pocketmine", new TimeCommand("time"));
 		$this->register("pocketmine", new TimingsCommand("timings"));
 		$this->register("pocketmine", new ReloadCommand("reload"), null, true);
-		$this->register("pocketmine", new TransferServerCommand("transferserver"));
 		$this->register("pocketmine", new XpCommand("xp"));
 		$this->register("pocketmine", new SetBlockCommand("setblock"));
 
