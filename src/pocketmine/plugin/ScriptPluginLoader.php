@@ -104,7 +104,7 @@ class ScriptPluginLoader implements PluginLoader{
 				$data[$key] = $content;
 			}
 
-			if($insideHeader and strpos($line, "*/") !== false){
+			if($insideHeader and strpos($line, "**/") !== false){
 				break;
 			}
 		}
@@ -118,8 +118,8 @@ class ScriptPluginLoader implements PluginLoader{
 	/**
 	 * Returns the filename patterns that this loader accepts
 	 *
-	 * @return array|string
-     */
+	 * @return string
+	 */
 	public function getPluginFilters(){
 		return "/\\.php$/i";
 	}
