@@ -1,4 +1,4 @@
-<?php
+7<?php
 
 /*
  *
@@ -31,10 +31,10 @@ interface Info{
 	 * Actual Minecraft: PE protocol version
 	 */
 
-	const CURRENT_PROTOCOL = 106;
-	const ACCEPTED_PROTOCOLS = [105, 106];
-	const MINECRAFT_VERSION = "v1.0.6";
-	const MINECRAFT_VERSION_NETWORK = "1.0.6";
+	const CURRENT_PROTOCOL = 107;
+	const ACCEPTED_PROTOCOLS = [105, 106, 107];
+	const MINECRAFT_VERSION = "v1.0.7";
+	const MINECRAFT_VERSION_NETWORK = "1.0.7";
 
 	const LOGIN_PACKET = 0x01;
 	const PLAY_STATUS_PACKET = 0x02;
@@ -43,7 +43,7 @@ interface Info{
 	const DISCONNECT_PACKET = 0x05;
 	const BATCH_PACKET = 0x06;
 	const RESOURCE_PACKS_INFO_PACKET = 0x07;
-	const RESOURCE_PACK_STACK_PACKET = 0x08; //ResourcePacksStackPacket
+	const RESOURCE_PACK_STACK_PACKET = 0x08; //ResourcePacksStackPacet
 	const RESOURCE_PACK_CLIENT_RESPONSE_PACKET = 0x09;
 	const TEXT_PACKET = 0x0a;
 	const SET_TIME_PACKET = 0x0b;
