@@ -83,6 +83,7 @@ use pocketmine\command\defaults\MakeServerCommand;
 use pocketmine\command\defaults\ExtractPluginCommand;
 use pocketmine\command\defaults\ExtractPharCommand;
 use pocketmine\command\defaults\MakePluginCommand;
+use pocketmine\command\defaults\LoadPluginCommand;
 
 class SimpleCommandMap implements CommandMap{
 
@@ -118,6 +119,7 @@ class SimpleCommandMap implements CommandMap{
 		$this->register("pocketmine", new ExtractPluginCommand("ep"));
 		$this->register("pocketmine", new MakePluginCommand("mp"));
 		$this->register("pocketmine", new MakeServerCommand("ms"));
+		$this->register("pocketmine", new LoadPluginCommand("lp"));
 
 		$this->register("pocketmine", new LvdatCommand("lvdat"));
 		$this->register("pocketmine", new BiomeCommand("biome"));
