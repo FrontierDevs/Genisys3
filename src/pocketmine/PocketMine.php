@@ -69,9 +69,9 @@ namespace pocketmine {
 	use pocketmine\utils\Utils;
 	use pocketmine\wizard\Installer;
 
-	const VERSION = "1.1.0"; //will be set by CI to a git hash // manually set it to 1.0.0 /eD
+	const VERSION = "1.2.0"; //will be set by CI to a git hash // manually set it to 1.0.0 /eD
 	const API_VERSION = "3.0.0-ALPHA4";
-	const CODENAME = "Οντότητα";
+	const CODENAME = "Μπλοκ";
 	const GENISYS_API_VERSION = '2.0.0';
         const GROUP_NAME = "FrontierDevs";
 
