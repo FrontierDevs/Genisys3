@@ -7,9 +7,9 @@ __Genisys, but better than anytime before__
 
 Introduction
 -------------
-Genisys3 is one of several derived projects resulting from the inactivity of **[PocketMine/PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** which is now commonly known as **[pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** and **[iTXTech/Genisys](https://github.com/iTXTech/Genisys)** . It has many gameplay features implemented which PocketMine-MP does not since Minecraft PE v0.11.
+Genisys3 is one of several derived projects resulting from the inactivity of **[PocketMine/PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** which is now commonly known as **[pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** and **[iTXTech/Genisys](https://github.com/iTXTech/Genisys)** . It has many gameplay features implemented which PocketMine-MP has not had since Minecraft PE v0.11.
 
-[Genisys](https://github.com/iTXTech/Genisys/) has officially died and [FrontierDevs](https://github.com/FrontierDevs) are reviving it under the name [Genisys3](http://github.genisys3.org)
+[Genisys](https://github.com/iTXTech/Genisys/) has officially died and [FrontierDevs](https://github.com/FrontierDevs) is reviving it under the name [Genisys3](http://github.genisys3.org)
 
 Help & Support
 -------------
