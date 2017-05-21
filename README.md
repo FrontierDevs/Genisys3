@@ -1,4 +1,4 @@
-<img src="/Enlite12.png" height="128" width="128" align="left">Genisys3
+<img src="/Enlight12.jpg" height="128" width="128" align="left">Genisys3
 -------------
 
 __Genisys, but better than before__
