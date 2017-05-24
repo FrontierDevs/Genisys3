@@ -5,7 +5,7 @@ __Genisys, but better than before__
 
 <br>
 <br>
-Check out [FrontierDevs/Pocketmine3](http://github.com/frontierdevs/pocketmine3) for our new and better version of the discontinued project
+Check out **[FrontierDevs/Pocketmine3](http://github.com/frontierdevs/pocketmine3)** for our new and better version of the discontinued project
 <br>
 
 Introduction
