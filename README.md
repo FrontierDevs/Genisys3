@@ -1,8 +1,10 @@
-<img src="/Enlight12.jpg" height="128" width="128" align="left">Genisys3
+<img src="/Enlight12.jpg" height="128" width="128" align="left">Genisys3 - DISCONTINUED
 -------------
 
 __Genisys, but better than before__
 
+<br>
+Check out [FrontierDevs/Pocketmine3](http://github.com/frontierdevs/pocketmine3) for our new and better version of the discontinued project
 <br>
 
 Introduction
